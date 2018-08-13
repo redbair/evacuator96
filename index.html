@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js "></script>
+</head>
+<body>
+        <script type="text/javascript"> 
+            VK.init({apiId: 6660281, onlyWidgets: true}); 
+           </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('#continue').prop('disabled', true); 
+        $('#agree').change(function() {
+            $('#continue').prop('disabled', function(i, val) {
+              return !val;
+            })
+        });
+        })
+</script>
+    <script type="text/javascript">
+        $(function(){
+                $("a[href^='#']").click(function(){
+                        var _href = $(this).attr("href");
+                        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                        return false;
+                });
+        });
+    </script>
+
+    <div class="header-info"> 
+        <div class="title">
+            <h2>Эвакуатор</h2><span>Екатеринбург</span>
+        </div>
+        <div class="work24">
+            <img class="icon24" src="img/24.png">
+            <h2>РАБОТАЕМ КРУГЛОСУТОЧНО</h2>
+        </div>
+        <div class="work24 w22">
+                <img class="icon22" src="img/22.png">
+                <h2>СРЕДНЕЕ ВРЕМЯ ПОДАЧИ</h2>
+        </div>
+        <div class="work24 tel">
+                <img class="imgtel" src="img/tel.png">
+                <a class="phone" href="tel:+7 (343)372-54-22">	 
+                    <small>8 (343)</small> 372-54-22</a>
+        </div>
+    </div>
+
+    <nav class="header-menu" id="menu">
+        <ul>
+            <li><a href="#price">Цены</a></li>
+            <li><a href="#adv">Преимущества</a></li>
+            <li><a href="#about-us">О нас</a></li>
+            <li><a href="#otziv">Отзывы</a></li>
+        </ul>
+    </nav>
+
+    <div class="car">
+        <div class="left"><p>НЕДОРОГОЙ ВЫЗОВ<br>
+                ЭВАКУАТОРА В ЕКАТЕРИНБУРГЕ
+                <span style="font-weight: normal;">Круглосуточно</span></p>
+              <p class="vizov">ВЫЗОВ<br>
+                       от  <span class="one"> 1000</span> руб</p>
+            <img class="carimg" src="img/carimg.png">
+        </div>
+        
+        <div class="right">
+            <div class="icons">
+                <img src="img/iconcar1.png">
+                <img src="img/iconcar2.png">
+                <img src="img/iconcar3.png">
+                <img class="time" src="img/icontime.png">
+            </div>
+            <div class="callform">
+                    <form id="gen1" method="post" action="contact-form.php" >
+                            			
+                        <input type="text" class="phone1" id="phone_field" name="tel" placeholder="+7 (___) ___ - __ - __" />
+                        <script>
+                                $(function(){
+                                  $("#phone_field").mask("+7 (999) 999 - 99 - 99");
+                                });
+                                </script>
+                        <input name="bezspama" type="text" style="display:none" value="" />
+                        <input style="cursor: pointer;" type="submit" id="continue" name="send1" value="ЗАКАЗАТЬ ЭВАКУАТОР"/>	
+                            <div class="line"></div>
+                        <div class="form__checkbox" >				
+                        <p style=" text-align: left;">		
+                        <input type="checkbox" name="agreement" id="agree">		
+                        <label for="agreement">Согласие на обработку данных</label>	<br>		
+                        <span>Настоящим подтверждаю, что я ознакомлен и согласен с <a href="/politika-obrabotki-personalnyh-dannyh/" target="_blank" style="color: #6ae2f1; font-size: 11px; text-align: left;text-decoration: none; "> условиями политики конфиденциальности</a></span>					</p>				</div>
+                    
+                    </form>	
+            </div>
+        </div>
+    </div>
+
+    <div class="text">
+            <p style="width: 700px;float:left;margin-right: 90px;">Вам срочно требуется вызвать эвакуатор дешево в Екатеринбурге? Обращайтесь в компанию «Эвакуатор.»! Мы работаем круглосуточно по Екатеринбургу и Свердловской области. <br>
+                <br>
+                Наша команда и техника стала незаменима при ДТП, аварийной остановке на трассе или поломке на улице. Доставить авто с нами – выгодно. Мы дорожим вашим временем, гарантированное время прибытия составляет от 25 минут, узнать точное время подачи вы всегда можете у диспетчера.
+            </p>
+            <p style="float:right;" id="adv"><h3>В каких ситуациях нужно вызвать нас:</h3> <br>
+                    • не заводится автомобиль; <br>
+                    • заблокированные колеса полностью или частично; <br>
+                    • отказ тормозной системы; <br>
+                    • необходима транспортировка ТС в другой город. <br>
+                    • нарушено рулевое управление машины;</p>
+    </div>
+
+    <div class="us-adv">
+        <h1>НАШИ ПРЕИМУЩЕСТВА</h1>
+        <p>Почему среди множества компаний клиенты выбирают нас?</p>
+        <div class="adv-icons">
+                <div class="icon1">
+                        <img class="advpos" src="img/adv-icon1.png">
+                        <h2>НИЗКИЕ ТАРИФЫ</h2>
+                </div>
+                <div class="icon2">
+                        <img class="advpos" src="img/adv-icon2.png">
+                        <h2>БЫСТРАЯ ПОДАЧА </h2>
+                        <p>от 20 минут</p>
+                </div>
+                <div class="icon3">
+                        <img class="advpos" src="img/adv-icon3.png">
+                        <h2>ПОДАЧА ТОЧНО В СРОК</h2>
+                        <p>обеспечено навигационной системой Глонасс</p>
+                </div>
+                <div class="icon4">
+                        <img class="advpos" src="img/adv-icon4.png">
+                        <h2>АККУРАТНОЕ ОБРАЩЕНИЕ С АВТОМОБИЛЕМ</h2>
+                </div>
+                <div class="icon5">
+                        <img class="advpos1" src="img/adv-icon5.png">
+                        <h2>РАБОТАЕМ 24 ЧАСА В СУТКИ</h2>
+                </div>
+        </div>
+
+    </div>
+
+    <div class="work">
+        <h1>МЫ РАБОТАЕМ ПО ОБЛАСТИ</h1>
+        <div class="left">
+            <div class="we_work">
+                <ul>
+                    <li class="map_icon">
+                        <p>Базовая цена услуги возрастает при выезде эвакуатора за пределы города <span>40 <span class="cost">руб/км</span></span></p>
+                    </li>
+                    <li class="time_evct">
+                        <p>Простой техники по вашей вине будет стоить <br><span>500 <span class="cost">руб в час</span></span></p>
+                    </li>
+                    <li class="car_evct">
+                        <p>Полученные автомобилем серьезные повреждения усложнение его погрузку разгрузку увеличивают стоимость на <span>300 <span class="cost">руб</span></span></p>
+                    </li>
+                </ul>
+                    <p class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=HUpF3iaF3BOOLJdKW0GnFBJvCKN23nig&amp;width=auto&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script></p>
+                
+            </div>
+
+        </div>
+
+        <div class="right">
+            <h2>Эвакуация по екатеринбургу и Свердловской области</h2>
+            <p>Если вы оказались в неприятной ситуации на территории Свердловской области или в пределах города, не отчаивайтесь. Специальная техника нашей команды удобно распределена по городу и области и круглосуточно помогает водителям. 
+            </p>
+            <br>
+            <p>Нас не пугают расстояния. Благодаря большому опыту работы и продуманной логистике мы проводим эвакуацию транспорта в городах, сёлах, в посёлках и деревнях.<br><br>
+                    
+                    Чтобы обратиться в нашу компанию вам нужно всего лишь набрать 
+                    номер телефона и указать местоположение транспортного средства. 
+                    Также вы можете оставить нам ваш номер телефона и выбрать вид транспорта
+                    в форме обратной связи, и наш диспетчер свяжется с вами.<br><br>
+                    
+                    Для оказания качественных и безопасных услуг 
+                    нам потребуется следующая информация:<br><br>
+                    
+                    Точное расположение авто или ближайшие ориентиры;
+                    Наличие повреждения или блокировок колес;
+                    Тип и марка машины;
+                    Дополнительные данные.</p>
+            <br>
+                    <p>Услуги эвакуатора по региону оплачиваются из расчета 40 рублей за километр пути. Мы выезжаем:</p>
+            <div class="list">
+                <ul class="left_points">
+                    <ul>
+                        <li>Первоуральск</li>
+                        <li>Верхняя Пышма</li>
+                        <li>Березовский</li>
+                    </ul>
+                </ul>	
+                
+                <ul class="center_points">
+                    <ul>
+                        <li>Каменск-Уральский</li>
+                        <li>Ревда</li>
+                        <li>Новоуральск</li>
+                    </ul>
+                </ul>
+                
+                <ul class="right_points">
+                    <ul>
+                        <li>Асбест</li>
+                        <li>Нижний-Тагил</li>
+                        <li id="price">Полевской</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="price">
+        <div class="left">
+            <h2>НАШИ ЦЕНЫ</h2>
+            <table>
+                <tr>
+                    <td class="col1">Мотоциклы</td>
+                    <td class="col2">от <span>1000</span> руб.</td>
+                </tr>
+                <tr>
+                    <td class="col1">Легковые автомобили</td>
+                    <td class="col2">от <span>1300</span> руб.</td>
+                </tr>
+                <tr>
+                    <td class="col1">Внедорожники</td>
+                    <td class="col2">от <span>1600</span> руб.</td>
+                </tr>
+                <tr>
+                    <td class="col1">Микроавтобусы</td>
+                    <td class="col2">от <span>1800</span> руб.</td>
+                </tr>
+                <tr>
+                    <td class="col1">Автобусы</td>
+                    <td class="col2">от <span>2500</span> руб.</td>
+                </tr>
+                <tr>
+                    <td class="col1">Грузовики</td>
+                    <td class="col2">от <span>3000</span> руб.</td>
+                </tr>
+                <tr>
+                    <td class="col1 lst">Вызов эвакуатора с манипулятором</td>
+                    <td class="col2 lst">от <span>2500</span> руб.</td>
+                </tr>
+            </table>
+            <span id="about-us"></span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="right">
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                    $('#continue1').prop('disabled', true); 
+                    $('#agree1').change(function() {
+                        $('#continue1').prop('disabled', function(i, val) {
+                          return !val;
+                        })
+                    });
+                    })
+            </script>
+                    <div class="callform">
+                            <form id="gen1" method="post" action="contact-form.php" >
+                                <input type="text"  name="name" placeholder="Введите ваше имя" required />                
+                                <input type="text" class="phone1" id="phone_field" name="tel" placeholder="+7 (___) ___ - __ - __" />
+                                <script>
+                                        $(function(){
+                                          $("#phone_field").mask("+7 (999) 999 - 99 - 99");
+                                        });
+                                        </script>
+                                <select type="text" name="type" class="select">
+                                        <option value="Легковое авто">Легковое авто</option>
+                                        <option value="Мототранспорт">Мототранспорт</option>
+                                        <option value="Внедорожник">Внедорожник</option>
+                                        <option value="Микроавтобус">Микроавтобус</option>
+                                        <option value="Грузовое авто">Грузовое авто</option>
+                                </select>
+                                <input name="bezspama" type="text" style="display:none" value="" />
+                                <input type="submit" id="continue1" name="send1" value="ЗАКАЗАТЬ ЭВАКУАТОР"/>	
+                            <div class="line"></div>
+                        <div class="form__checkbox" >				
+                        <p style=" text-align: left;">		
+                        <input type="checkbox" name="agreement" id="agree1">	
+                                <label for="agreement">Согласие на обработку данных</label>	<br>		
+                                <span>Настоящим подтверждаю, что я ознакомлен и согласен с <a href="/politika-obrabotki-personalnyh-dannyh/" target="_blank" style="color: #6ae2f1; font-size: 11px; text-align: left;text-decoration: none; "> условиями политики конфиденциальности</a></span>					</p>				</div>
+                            
+                            </form>	
+                    </div>
+              </div>
+              
+        </div>
+    </div>
+    
+    <div class="about-us">
+        O НАС
+    </div>
+
+    <div class="about-us-text">
+        <p>Компания «Эвакуатор» уже 7 лет предоставляет услуги запланированной и срочной эвакуации наземного транспорта – мотоциклов, легковых и грузовых автомобилей, минивэнов, микроавтобусов, автобусов и спецтехники. За это время мы смогли не только эффективно наладить логистические процессы, но так же приобрести спецтехнику, готовую решить любую задачу, мы можем назвать тысячу причин для обращения к нам, однако качество и профессионализм всегда будут на первом месте.</p>
+    </div>
+
+    <div class="col3">
+        <div class="one">
+            <img class="icon24" src="img/500.png">
+        </div>
+        <div class="two">
+            <img class="icon24" src="img/22_1.png">
+        </div>
+        <div class="three">
+            <img class="icon24" src="img/7.png">
+        </div>
+    </div>
+    <h2 id="otziv" class="otz">ОТЗЫВЫ</h2>
+    <div class="otzivi">
+        <div class="block">
+                <div id="vk_comments"></div> 
+                <script type="text/javascript"> 
+                VK.Widgets.Comments("vk_comments", {height:500, limit: 100, attach: "*"}); 
+                </script>
+        </div>
+    </div>
+
+    <footer>
+			<div class="footer-menu">
+				<ul class="footer_nav content">
+					<li><a class="page-scroll" href="#price" title="">Цены</a></li>
+					<li><a class="page-scroll" href="#adv" >Преимущества</a></li>
+					<li><a class="page-scroll" href="#about-us" title="">О нас</a></li>
+					<li><a class="page-scroll" href="#otziv" title="">Отзывы</a></li>		
+				</ul>
+				
+			</div>	
+					<div class="footer-info">
+						<div class="copy">
+							<p>© Эвакуатор, 2011-2018<br>
+							® Все права защищены</p>
+							
+						</div>
+					</div>
+		</footer> 
+
+    <script src="js/jquery.maskedinput.min.js"></script>
+    
+    </body>
+</body>
+</html>
